@@ -76,14 +76,11 @@ function App() {
           </Radio.Group>
         </Form.Item>
         <Form.Item wrapperCol={{ span: 24 }} name="dropdownSelection">
-          <Space className="form-input">
-            <label htmlFor="">Dropdown title</label>
-            <Select>
-              <Select.Option value="dropdown1">Dropdown option 1</Select.Option>
-              <Select.Option value="dropdown2">Dropdown option 2</Select.Option>
-              <Select.Option value="dropdown3">Dropdown option 3</Select.Option>
-            </Select>
-          </Space>
+          <Select defaultValue="dropdown1">
+            <Select.Option value="dropdown1">Dropdown option 1</Select.Option>
+            <Select.Option value="dropdown2">Dropdown option 2</Select.Option>
+            <Select.Option value="dropdown3">Dropdown option 3</Select.Option>
+          </Select>
         </Form.Item>
         <div className="form-buttons">
           <Button block htmlType="submit">
